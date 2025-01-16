@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ThemeChanger from "./ThemeChanger";
 
 export default function Header() {
@@ -11,8 +12,10 @@ export default function Header() {
                     Designer
                 </span>
                 <ThemeChanger />
-                <span>
-
+                <span className="text-right">
+                    <Link href="/projects">Projects</Link>
+                    <br />
+                    <Link href="/about">About</Link>
                 </span>
             </div>
         </header>
