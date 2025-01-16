@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { setTheme, resolvedTheme } = useTheme()
 
 
   useEffect(() => {
@@ -16,12 +17,17 @@ const ThemeSwitch = () => {
     return null
   }
 
+  function handleThemeChange() {
+
+    resolvedTheme === "light" ? setTheme("dark") : setTheme("light")
+
+    console.log(resolvedTheme)
+  }
+
   return (
-    <select value={theme} onChange={e => setTheme(e.target.value)}>
-      <option value="system">System</option>
-      <option value="dark">Dark</option>
-      <option value="light">Light</option>
-    </select>
+    <div className="bg-[#232323] w-16 rounded-[32px] h-8 flex items-center px-1 cursor-pointer select-none" onClick={handleThemeChange}>
+      <Image src="/SVGs/whiteball.svg" alt='switch' width={24} height={24} className={`transition-transform duration-150 ${resolvedTheme === "dark" ? "translate-x-full" : ""}`}/>
+    </div>
   )
 }
 
