@@ -9,9 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "gray-1": "#878392",
+        "gray-2": "#A3A3A3"
       },
+      fontFamily: {
+        "inter": ['Inter', "sans-serif"],
+        "grotesk": ["Space Grotesk", "sans-serif"]
+      }
     },
   },
   plugins: [],
