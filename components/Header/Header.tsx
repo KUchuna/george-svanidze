@@ -1,7 +1,8 @@
-import Link from "next/link";
 import ThemeChanger from "./ThemeChanger";
+import NavigationButtons from "./NavigationButtons";
 
 export default function Header() {
+    
     return (
         <header className="flex flex-col">
             <h1 className="font-grotesk uppercase text-[11.7vw] leading-none font-medium select-none">george svanidze</h1>
@@ -12,11 +13,7 @@ export default function Header() {
                     Designer
                 </span>
                 <ThemeChanger />
-                <span className="text-right">
-                    <Link href="/projects">Projects</Link>
-                    <br />
-                    <Link href="/about">About</Link>
-                </span>
+                <NavigationButtons />
             </div>
         </header>
     )
