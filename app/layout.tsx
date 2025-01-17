@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import Header from "@/components/Header/Header";
 
 export const metadata: Metadata = {
   title: "George",
@@ -17,7 +16,6 @@ export default function RootLayout({
     <html suppressHydrationWarning>
       <body>
         <ThemeProvider>
-          <Header />
           {children}
         </ThemeProvider>
       </body>

@@ -1,11 +1,19 @@
 import ThemeChanger from "./ThemeChanger";
 import NavigationButtons from "./NavigationButtons";
 
-export default function Header() {
+interface HeaderProps {
+    mainPage?: boolean
+}
+
+export default function Header({mainPage}: HeaderProps) {
     
     return (
         <header className="flex flex-col">
-            <h1 className="font-grotesk uppercase text-[11.7vw] leading-none font-medium select-none">george svanidze</h1>
+            {mainPage ? 
+                <h1 className="font-grotesk uppercase text-[11.7vw] leading-none font-medium select-none">george svanidze</h1>
+                : 
+                <div className="uppercase w-full flex justify-center py-4 font-grotesk">g &#8226; s</div>
+            }
             <div className="flex px-2 justify-between">
                 <span className="text-gray-1">
                     Product
