@@ -14,14 +14,16 @@ export default function Header({mainPage}: HeaderProps) {
                 : 
                 <div className="uppercase w-full flex justify-center py-4 font-grotesk">g &#8226; s</div>
             }
-            <div className="flex px-2 justify-between">
-                <span className="text-gray-1">
-                    Product
-                    <br />
-                    Designer
-                </span>
-                <ThemeChanger />
-                <NavigationButtons />
+            <div className="px-2">
+                <div className="flex justify-between border-b border-[#353535] pb-6 font-inter">
+                    <span className="text-gray-1">
+                        Product
+                        <br />
+                        Designer
+                    </span>
+                    <ThemeChanger />
+                    <NavigationButtons />
+                </div>
             </div>
         </header>
     )

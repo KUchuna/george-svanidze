@@ -9,7 +9,7 @@ export default function NavigationButtons() {
 
     return (
         <>
-            <span className="text-right">
+            <span className="text-right font-inter">
                     <Link href="/" className={`${pathName === '/' ? "font-medium" : "text-gray-1"}`}>Projects</Link>
                     <br />
                     <Link href="/about" className={`${pathName === '/about' ? "font-medium" : "text-gray-1"}`}>About</Link>
