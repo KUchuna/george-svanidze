@@ -1,6 +1,5 @@
 "use client"
 
-import { useTheme } from "next-themes"
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/navigation"
 
@@ -13,8 +12,6 @@ interface CardProps {
 }
 
 export default function Card(props: CardProps) {
-    const { resolvedTheme } = useTheme()
-
 
     const router = useRouter()
 
