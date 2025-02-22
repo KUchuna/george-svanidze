@@ -8,9 +8,9 @@ export default function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true })
   const [slideIndex, setSlideIndex] = useState(0)
 
-  let lastScrollY = window.scrollY 
-
+  
   useEffect(() => {
+    let lastScrollY = window.scrollY 
     const handleScroll = () => {
       const currentScroll = window.scrollY
       const deltaY = currentScroll - lastScrollY
