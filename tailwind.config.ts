@@ -10,7 +10,9 @@ export default {
     extend: {
       colors: {
         "gray-1": "#878392",
-        "gray-2": "#A3A3A3"
+        "gray-2": "#A3A3A3",
+        "gray-3": "#C3C1C7",
+        "gray-4": "#868391",
       },
       fontFamily: {
         "inter": ['Inter', "sans-serif"],

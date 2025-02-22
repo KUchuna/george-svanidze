@@ -1,3 +1,6 @@
+import AboutHeader from "@/components/AboutPage/AboutHeader/AboutHeader";
+import Carousel from "@/components/AboutPage/Carousel/Carousel";
+import Description from "@/components/AboutPage/Description/Description";
 import Header from "@/components/Header/Header";
 
 export default function About() {
@@ -5,7 +8,12 @@ export default function About() {
         <>
             <Header />
             <main>
-                <h1 className="text-4xl font-bold">This is an about page!</h1>
+                <div className="px-2">
+                    <AboutHeader />
+                    <Carousel />
+                    <Description />
+                </div>
+                <img src="/pictures/about/nextproject.png" alt="" className="mt-10"/>
             </main>
         </>
     )

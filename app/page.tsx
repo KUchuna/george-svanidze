@@ -1,7 +1,9 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Card from "@/components/MainCard/Card";
-import Data from "@/public/datas/cardData.js"
+import data from "@/public/lib/cardData.js"
+
+
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
       />
       <main className="text-5xl font-grotesk flex justify-center items-center mt-20 text-center">
         <div className="columns-4 gap-3 px-[0.625rem] pb-16">
-          {Data.map((card, index) => {
+          {data.map((card, index) => {
             return (
               <Card 
                 key={index}
