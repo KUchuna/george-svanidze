@@ -31,7 +31,7 @@ const Data = [
     },
     {
         id: 6,
-        img: "/pictures/cards/Inclassica.png",
+        img: "/pictures/cards/inclassica.png",
         title: "Inclassica",
         tags: ["Design System", "App Design", "UX Design"]
     },
@@ -79,7 +79,7 @@ const Data = [
     },
     {
         id: 14,
-        img: "/pictures/cards/Nairi.png",
+        img: "/pictures/cards/nairi.png",
         title: "Nairi App",
         tags: ["Design System", "App Design", "UX Design"]
     },
