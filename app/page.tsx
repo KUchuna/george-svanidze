@@ -1,5 +1,7 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import Card from "@/components/MainCard/Card";
+import Data from "@/public/datas/cardData.js"
 
 export default function Home() {
   return (
@@ -8,7 +10,20 @@ export default function Home() {
         mainPage
       />
       <main className="text-5xl font-grotesk flex justify-center items-center mt-20 text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod modi unde, veniam natus tempora neque error et eligendi odio. Velit voluptate qui obcaecati, facere veritatis harum soluta fugit maxime.
+        <div className="columns-4 gap-3 px-[0.625rem] pb-16">
+          {Data.map((card, index) => {
+            return (
+              <Card 
+                key={index}
+                id={card.id}
+                index={index}
+                img={card.img}
+                title={card.title}
+                tags={card.tags}
+              />
+            )
+          })}
+        </div>
       </main>
       <Footer />
     </>
