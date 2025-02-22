@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import aboutProjects from "@/public/lib/aboutProjects.js"
 
 export default function Description() {

@@ -1,5 +1,5 @@
 "use client"
-
+/* eslint-disable @next/next/no-img-element */
 import useEmblaCarousel from "embla-carousel-react"
 import carouselData from "@/public/lib/carouselData.js"
 import { useEffect, useState } from "react"
@@ -8,7 +8,7 @@ export default function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true })
   const [slideIndex, setSlideIndex] = useState(0)
 
-  let lastScrollY = window.scrollY // Move outside of useEffect to persist
+  let lastScrollY = window.scrollY 
 
   useEffect(() => {
     const handleScroll = () => {
