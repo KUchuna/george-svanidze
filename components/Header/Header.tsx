@@ -8,7 +8,7 @@ interface HeaderProps {
 export default function Header({mainPage}: HeaderProps) {
     
     return (
-        <header className="flex flex-col">
+        <header className={`flex flex-col ${mainPage ? "" : "sticky top-0 z-50 bg-white dark:bg-[#141414]"}`}>
             {mainPage ? 
                 <h1 className="font-grotesk uppercase text-[11.6vw] leading-none font-medium select-none text-center">george svanidze</h1>
                 : 

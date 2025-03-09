@@ -27,3 +27,7 @@ body, html {
   background-color: var(--accent);
   z-index: 2;
 }
+
+#carousel::-webkit-scrollbar { 
+  display: none;
+}

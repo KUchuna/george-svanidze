@@ -2,6 +2,7 @@ const aboutProjects = [
     {
         id: 1,
         img: "pictures/about/pyango.png",
+        imgDark: "pictures/about/pyango.png",
         title: "Pyango GmbH, Senior Product Designer",
         date: "2023 - 2024",
         region: "Fahrwangen, Switzerland",
@@ -11,6 +12,7 @@ const aboutProjects = [
     {
         id: 2,
         img: "pictures/about/dtail.png",
+        imgDark: "pictures/about/dtaildark.png",
         title: "Dtail Studio, Senior Product Designer",
         date: "2022 - 2023",
         region: "Barcelona, Spain",
@@ -20,6 +22,7 @@ const aboutProjects = [
     {
         id: 3,
         img: "pictures/about/tbc.png",
+        imgDark: "pictures/about/tbcdark.png",
         title: "TBC UZ, Senior Product Designer",
         date: "2021 - Present",
         region: "Tashkent, Uzbekistan",
@@ -29,6 +32,7 @@ const aboutProjects = [
     {
         id: 4,
         img: "pictures/about/codics.png",
+        imgDark: "pictures/about/codics.png",
         title: "Codics, UI Designer",
         date: "2020 - 2021",
         region: "Yerevan, Armenia",
@@ -38,6 +42,7 @@ const aboutProjects = [
     {
         id: 5,
         img: "pictures/about/helix.png",
+        imgDark: "pictures/about/helix.png",
         title: "Helix Nebula Capitals, Graphic Designer",
         date: "2018 - 2019",
         region: "Tbilisi, Georgia",

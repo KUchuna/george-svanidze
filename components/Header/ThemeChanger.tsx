@@ -29,11 +29,11 @@ export default function ThemeSwitch() {
   return (
     <div className={`dark:bg-[#232323] bg-[#F4F4F4] w-16 rounded-[32px] flex items-center h-8 px-1 cursor-pointer select-none ${resolvedTheme === "dark" ? "justify-end" : "justify-start"}`} onClick={() => handleThemeChange()}>
       <motion.div 
-        className='w-6 h-6 rounded-full bg-white border-[1px] border-[#F0F0F0] dark:border-[#303030]' 
+        className='w-6 h-6 rounded-full bg-white dark:bg-[#4B4B4B] border-[1px] border-[#F0F0F0] dark:border-[#303030]' 
         layout
         transition={{
           type: "spring",
-          duration: 0.5,
+          duration: 0.85,
           bounce: 0.2,
         }}
       />
