@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="bg-black dark:bg-[#232323] pt-[10.625rem] pb-[13.75rem] px-8 flex justify-between mt-auto font-grotesk">
              <div className="flex gap-8 w-full">
-                <Image src="/pictures/giorgi.jpeg" alt="Giorgi Svanidze" width={246} height={246} className="rounded-3xl object-cover max-w-[246px] max-h-[246px] w-full h-full select-none"/>
+                <Image src="/pictures/giorgi.jpeg" alt="Giorgi Svanidze" width={246} height={246} className="rounded-3xl object-cover max-w-[246px] max-h-[246px] w-full h-full select-none" unoptimized/>
                 <div className="h-full flex justify-between flex-col font-medium text-gray-2 text-[4rem] w-full leading-none">
                     <span className="w-fit">Feel free to reach out for any</span>
                     <span className="w-fit">collaboration opportunities at</span>

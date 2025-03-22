@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Card from "@/components/MainCard/Card";
-import data from "@/public/lib/cardData.js"
+import data from "@/public/lib/projectData.js"
 
 
 
@@ -20,6 +20,7 @@ export default function Home() {
                 id={card.id}
                 index={index}
                 img={card.img}
+                imgDark={card.imgDark}
                 title={card.title}
                 tags={card.tags}
               />

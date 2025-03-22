@@ -14,6 +14,7 @@ const data = [
     {
         id: 3,
         img: "/pictures/cards/musicroom.png",
+        imgDark: "/pictures/cards/musicroomdark.png",
         title: "Music Room",
         tags: ["Design System", "App Design", "UX Design"]
     },
@@ -32,6 +33,7 @@ const data = [
     {
         id: 6,
         img: "/pictures/cards/inclassica.png",
+        imgDark: "/pictures/cards/inclassicadark.png",
         title: "Inclassica",
         tags: ["Design System", "App Design", "UX Design"]
     },
