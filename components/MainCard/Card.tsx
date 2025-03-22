@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/navigation"
 
@@ -20,8 +21,8 @@ export default function Card(props: CardProps) {
     }
 
     return (
-        <div className={`flex flex-col justify-start items-start gap-1 break-inside-avoid cursor-pointer ${props.index != 0 && "mt-6"} ${props.index == 3 ? "mb-60" : ""}`} onClick={() => handleClick()}>
-            <img src={props.img} alt="hero" className="mb-1 min-w-full min-h-full" />
+        <div className={`flex flex-col justify-start items-start gap-1 break-inside-avoid cursor-pointer ${props.index != 0 && "mt-6"} ${props.index == 3 ? "mb-[100rem]" : ""}`} onClick={() => handleClick()}>
+            <Image src={props.img} alt="hero" width={100} height={100} className="mb-1 min-w-full min-h-full" quality={100} priority unoptimized/>
             <span className="text-[1rem] font-medium">
                 {props.title} 
             </span>

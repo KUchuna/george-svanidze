@@ -43,42 +43,36 @@ const data = [
     },
     {
         id: 8,
-        img: "/pictures/cards/pyango.png",
-        title: "Pyango",
-        tags: ["Design System", "App Design", "UX Design"]
-    },
-    {
-        id: 9,
         img: "/pictures/cards/movan.png",
         title: "Movan",
         tags: ["Design System", "App Design", "UX Design"]
     },
     {
-        id: 10,
+        id: 9,
         img: "/pictures/cards/galileo.png",
-        title: "Galileo Fitness",
+        title: "Galileo",
+        tags: ["Design System", "App Design", "UX Design"]
+    },
+    {
+        id: 10,
+        img: "/pictures/cards/pyango.png",
+        title: "Pyango GmbH",
         tags: ["Design System", "App Design", "UX Design"]
     },
     {
         id: 11,
-        img: "/pictures/cards/m4ff.png",
-        title: "M4FF",
-        tags: ["Design System", "App Design", "UX Design"]
-    },
-    {
-        id: 12,
         img: "/pictures/cards/tier1.png",
         title: "Tier1",
         tags: ["Design System", "App Design", "UX Design"]
     },
     {
-        id: 13,
+        id: 12,
         img: "/pictures/cards/softphone.png",
         title: "Softphone",
         tags: ["Design System", "App Design", "UX Design"]
     },
     {
-        id: 14,
+        id: 13,
         img: "/pictures/cards/nairi.png",
         title: "Nairi App",
         tags: ["Design System", "App Design", "UX Design"]

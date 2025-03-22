@@ -1,5 +1,6 @@
 import ThemeChanger from "./ThemeChanger";
 import NavigationButtons from "./NavigationButtons";
+import Link from "next/link";
 
 interface HeaderProps {
     mainPage?: boolean
@@ -12,7 +13,11 @@ export default function Header({mainPage}: HeaderProps) {
             {mainPage ? 
                 <h1 className="font-grotesk uppercase text-[11.6vw] leading-none font-medium select-none text-center">george svanidze</h1>
                 : 
-                <div className="uppercase w-full flex justify-center py-4 font-grotesk">g &#8226; s</div>
+                <div className="w-full flex justify-center">
+                    <Link href="/" className="w-fit">
+                        <div className="uppercase flex justify-center py-4 font-grotesk">g &#8226; s</div>
+                    </Link>
+                </div>
             }
             <div className="px-2">
                 <div className="flex justify-between border-b border-[#EBEBEB] dark:border-[#353535] pb-6 font-inter">

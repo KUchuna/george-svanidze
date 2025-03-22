@@ -9,19 +9,19 @@ const carouselData = [
     },
     {
         id: 3,
-        img: "/pictures/carousel/slide4.jpeg"
+        img: "/pictures/carousel/slide3.png"
     },
     {
         id: 4,
-        img: "/pictures/carousel/slide5.jpeg"
+        img: "/pictures/carousel/slide4.png"
     },
     {
         id: 5,
-        img: "/pictures/carousel/slide6.jpeg"
+        img: "/pictures/carousel/slide5.png"
     },
     {
         id: 6,
-        img: "/pictures/carousel/slide7.jpeg"
+        img: "/pictures/carousel/slide6.png"
     },
 ]
 

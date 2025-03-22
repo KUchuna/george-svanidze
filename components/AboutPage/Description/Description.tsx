@@ -4,7 +4,7 @@ export default function Description() {
     return (
         <section className="w-full flex flex-col">
             <div className="flex justify-between py-16 border-b border-[#EBEBEB] dark:border-[#353535]">
-                <span className="text-5xl font-bold font-grotesk sticky top-60 h-full">
+                <span className="text-5xl font-bold font-grotesk sticky top-48 h-full">
                     All About Me
                 </span>
                 <div className="w-1/2 flex flex-col gap-6">
@@ -30,8 +30,8 @@ export default function Description() {
             </div>
             
             <div className="flex justify-between pt-16">
-                <span className="text-5xl font-bold font-grotesk sticky top-60 h-full">
-                    Work experience
+                <span className="text-5xl font-bold font-grotesk sticky top-48 h-full">
+                    Work Experience
                 </span>
                 <div className="w-1/2 flex flex-col gap-6">
                     <div className="flex flex-col gap-8 ">

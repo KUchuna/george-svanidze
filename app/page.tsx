@@ -12,7 +12,7 @@ export default function Home() {
         mainPage
       />
       <main className="text-5xl font-grotesk flex justify-center items-center mt-20 text-center">
-        <div className="columns-4 gap-3 px-[0.625rem] pb-16">
+        <div className="columns-4 gap-3 px-[0.625rem] pb-16 w-full">
           {data.map((card, index) => {
             return (
               <Card 
