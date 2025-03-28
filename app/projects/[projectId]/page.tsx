@@ -1,5 +1,5 @@
-import Cardinal from "@/components/projectPages/Cardinal";
 import Tbc from "@/components/projectPages/Tbc";
+import Tier1 from "@/components/projectPages/Tier1";
 import data from "@/public/lib/projectData"
 
 interface Project {
@@ -22,7 +22,7 @@ export default async function Page({params,}: {params: Promise<{ projectId: stri
   switch (projectId) {
     case 1:
       return <Tbc />
-    case 5:
-      return <Cardinal /> 
+    case 11:
+      return <Tier1 /> 
     }
 }
