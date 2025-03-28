@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Tier1() {
     return (
-        <main className="flex flex-col px-2 gap-3">
+        <main className="flex flex-col p-2 gap-3">
             <Image src='/pictures/projects/tier1/1.png' alt="" width={100} height={100} className="w-full h-full" unoptimized/>
             <div className="flex gap-3 w-full">
                 <Image src='/pictures/projects/tier1/2.png' alt="" width={100} height={100} className="flex-1 basis-0 h-full" unoptimized/>
