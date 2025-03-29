@@ -1,3 +1,4 @@
+import Movan from "@/components/projectPages/Movan";
 import Tbc from "@/components/projectPages/Tbc";
 import Tier1 from "@/components/projectPages/Tier1";
 import data from "@/public/lib/projectData"
@@ -22,6 +23,8 @@ export default async function Page({params,}: {params: Promise<{ projectId: stri
   switch (projectId) {
     case 1:
       return <Tbc />
+    case 8:
+      return <Movan />
     case 11:
       return <Tier1 /> 
     }
