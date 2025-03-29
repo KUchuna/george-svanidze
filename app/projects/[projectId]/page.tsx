@@ -1,3 +1,4 @@
+import Cardinal from "@/components/projectPages/Cardinal";
 import Galileo from "@/components/projectPages/Galileo";
 import Movan from "@/components/projectPages/Movan";
 import Tbc from "@/components/projectPages/Tbc";
@@ -24,6 +25,8 @@ export default async function Page({params,}: {params: Promise<{ projectId: stri
   switch (projectId) {
     case 1:
       return <Tbc />
+    case 5:
+      return <Cardinal />
     case 8:
       return <Movan />
     case 9:
