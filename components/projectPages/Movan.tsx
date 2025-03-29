@@ -39,7 +39,6 @@ export default function Movan() {
             <Image src='/pictures/projects/movan/20.png' alt="" width={100} height={100} className="w-full h-full" unoptimized/>
             <Image src='/pictures/projects/movan/21.png' alt="" width={100} height={100} className="w-full h-full" unoptimized/>
             <Image src='/pictures/projects/movan/22.png' alt="" width={100} height={100} className="w-full h-full" unoptimized/>
-            <Image src='/pictures/projects/movan/23.png' alt="" width={100} height={100} className="w-full h-full" unoptimized/>
         </main>
     )
 }

@@ -1,3 +1,4 @@
+import Galileo from "@/components/projectPages/Galileo";
 import Movan from "@/components/projectPages/Movan";
 import Tbc from "@/components/projectPages/Tbc";
 import Tier1 from "@/components/projectPages/Tier1";
@@ -25,6 +26,8 @@ export default async function Page({params,}: {params: Promise<{ projectId: stri
       return <Tbc />
     case 8:
       return <Movan />
+    case 9:
+      return <Galileo />
     case 11:
       return <Tier1 /> 
     }
