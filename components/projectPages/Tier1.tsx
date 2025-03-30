@@ -25,7 +25,7 @@ export default function Tier1() {
             </div>
             <Image src='/pictures/projects/tier1/13.png' alt="" width={100} height={100} className="w-full h-full" unoptimized/>
             <Image src='/pictures/projects/tier1/14.png' alt="" width={100} height={100} className="w-full h-full" unoptimized/>
-            <Image src='/pictures/projects/tier1/15.png' alt="" width={100} height={100} className="w-full h-full" unoptimized/>
+            <Image src='/pictures/projects/tier1/15.png' alt="" width={100} height={100} className="w-full h-full rounded-[8px]" unoptimized/>
             <div className="flex gap-3 w-full">
                 <Image src='/pictures/projects/tier1/16.png' alt="" width={100} height={100} className="flex-1 basis-0 h-full" unoptimized/>
                 <Image src='/pictures/projects/tier1/17.png' alt="" width={100} height={100} className="flex-1 basis-0 h-full" unoptimized/>

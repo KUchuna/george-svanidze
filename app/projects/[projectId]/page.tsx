@@ -1,6 +1,8 @@
+import NotFound from "@/app/not-found";
 import Cardinal from "@/components/projectPages/Cardinal";
 import Galileo from "@/components/projectPages/Galileo";
 import Movan from "@/components/projectPages/Movan";
+import NavCarousel from "@/components/projectPages/NavBar/NavCarousel";
 import Tbc from "@/components/projectPages/Tbc";
 import Tier1 from "@/components/projectPages/Tier1";
 import data from "@/public/lib/projectData"
@@ -18,20 +20,36 @@ export async function generateStaticParams() {
   }))
 }
 
-export default async function Page({params,}: {params: Promise<{ projectId: string }>}) {
-  const projectId: number = parseInt((await params).projectId)
+export default async function Page({ params }: { params: Promise<{ projectId: string }> }) {
+  const projectId: number = parseInt((await params).projectId);
 
-
+  let Component;
   switch (projectId) {
     case 1:
-      return <Tbc />
+      Component = Tbc;
+      break;
     case 5:
-      return <Cardinal />
+      Component = Cardinal;
+      break;
     case 8:
-      return <Movan />
+      Component = Movan;
+      break;
     case 9:
-      return <Galileo />
+      Component = Galileo;
+      break;
     case 11:
-      return <Tier1 /> 
-    }
+      Component = Tier1;
+      break;
+    default:
+      Component = () => <NotFound innerpage />;
+  }
+
+  return (
+    <>
+      <NavCarousel 
+        id={projectId}
+      />
+      <Component />
+    </>
+  );
 }

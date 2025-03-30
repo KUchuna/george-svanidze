@@ -31,3 +31,13 @@ body, html {
 #carousel::-webkit-scrollbar { 
   display: none;
 }
+
+#show-more {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  min-width: max-content;
+  border-bottom: 1px solid;
+  margin-bottom: auto;
+}
+

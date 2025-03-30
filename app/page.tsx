@@ -3,8 +3,6 @@ import Header from "@/components/Header/Header";
 import Card from "@/components/MainCard/Card";
 import data from "@/public/lib/projectData.js"
 
-
-
 export default function Home() {
   return (
     <>
