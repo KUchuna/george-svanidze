@@ -23,7 +23,10 @@ export async function generateStaticParams() {
 export default async function Page({ params }: { params: Promise<{ projectId: string }> }) {
   const projectId: number = parseInt((await params).projectId);
 
+  const NotFoundPage = () => <NotFound innerpage />;
+
   let Component;
+
   switch (projectId) {
     case 1:
       Component = Tbc;
@@ -41,8 +44,9 @@ export default async function Page({ params }: { params: Promise<{ projectId: st
       Component = Tier1;
       break;
     default:
-      Component = () => <NotFound innerpage />;
-  }
+      Component = NotFoundPage;
+    }
+
 
   return (
     <>
