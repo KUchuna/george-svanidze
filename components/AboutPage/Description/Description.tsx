@@ -29,7 +29,7 @@ export default function Description() {
                  </div>
             </div>
             
-            <div className="flex justify-between pt-16">
+            <div className="flex justify-between py-16">
                 <span className="text-5xl font-bold font-grotesk sticky top-48 h-full">
                     Work Experience
                 </span>

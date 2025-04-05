@@ -24,6 +24,8 @@ export default async function ProjectImages({projectId}: {projectId: number}) {
                     width={100}
                     height={100}
                     className={`h-full ${row.length > 1 ? "flex-1 basis-0" : "w-full"}`}
+                    priority
+                    loading="eager"
                     unoptimized
                     />
                 )

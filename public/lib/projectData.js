@@ -4,7 +4,21 @@ const data = [
         img: "/pictures/cards/tbc.png",
         logo: "/pictures/logos/tbc.png",
         title: "TBC App",
-        tags: ["Design System", "App Design", "UX Design"]
+        tags: ["Design System", "App Design", "UX Design"],
+        images: [
+            ["/pictures/projects/tbc/1.png"],
+            ["/pictures/projects/tbc/2.png", "/pictures/projects/tbc/3.png", "/pictures/projects/tbc/4.png"],
+            ["/pictures/projects/tbc/5.png"],
+            ["/pictures/projects/tbc/6.png", "/pictures/projects/tbc/7.png","/pictures/projects/tbc/8.png", "/pictures/projects/tbc/9.png",],
+            ["/pictures/projects/tbc/10.png"],
+            ["/pictures/projects/tbc/11.png", "/pictures/projects/tbc/12.png"],
+            ["/pictures/projects/tbc/13.png", "/pictures/projects/tbc/14.png"],
+            ["/pictures/projects/tbc/15.png", "/pictures/projects/tbc/16.png"],
+            ["/pictures/projects/tbc/17.png", "/pictures/projects/tbc/18.png"],
+            ["/pictures/projects/tbc/19.png", "/pictures/projects/tbc/20.png"],
+            ["/pictures/projects/tbc/21.png", "/pictures/projects/tbc/22.png"],
+            ["/pictures/projects/tbc/23.png"]
+        ]
     },
     {
         id: 2,
@@ -26,7 +40,20 @@ const data = [
         img: "/pictures/cards/mila.png",
         logo: "/pictures/logos/mila.png",
         title: "Mila",
-        tags: ["Design System", "App Design", "UX Design"]
+        tags: ["Design System", "App Design", "UX Design"],
+        images: [
+            ["/pictures/projects/mila/1.png"],
+            ["/pictures/projects/mila/2.png", "/pictures/projects/mila/3.png"],
+            ["/pictures/projects/mila/4.png", "/pictures/projects/mila/5.png"],
+            ["/pictures/projects/mila/6.png"],
+            ["/pictures/projects/mila/7.png", "/pictures/projects/mila/8.png", "/pictures/projects/mila/9.png"],
+            ["/pictures/projects/mila/10.png"],
+            ["/pictures/projects/mila/11.png", "/pictures/projects/mila/12.png"],
+            ["/pictures/projects/mila/13.png", "/pictures/projects/mila/14.png"],
+            ["/pictures/projects/mila/15.png", "/pictures/projects/mila/16.png"],
+            ["/pictures/projects/mila/17.png"],
+            ["/pictures/projects/mila/18.png"],
+        ]
     },
     {
         id: 5,
@@ -59,7 +86,15 @@ const data = [
         img: "/pictures/cards/kita.png",
         logo: "/pictures/logos/kita.png",
         title: "Kita",
-        tags: ["Design System", "App Design", "UX Design"]
+        tags: ["Design System", "App Design", "UX Design"],
+        images: [
+            ["/pictures/projects/kita/1.png"],
+            ["/pictures/projects/kita/2.png", "/pictures/projects/kita/3.png"],
+            ["/pictures/projects/kita/4.png"],
+            ["/pictures/projects/kita/5.png", "/pictures/projects/kita/6.png","/pictures/projects/kita/7.png"],
+            ["/pictures/projects/kita/8.png"],
+            ["/pictures/projects/kita/9.png"],
+        ]
     },
     {
         id: 8,
@@ -108,7 +143,16 @@ const data = [
         img: "/pictures/cards/pyango.png",
         logo: "/pictures/logos/pyango.png",
         title: "Pyango GmbH",
-        tags: ["Design System", "App Design", "UX Design"]
+        tags: ["Design System", "App Design", "UX Design"],
+        images: [
+            ["/pictures/projects/pyango/1.png"],
+            ["/pictures/projects/pyango/2.png", "/pictures/projects/pyango/3.png"],
+            ["/pictures/projects/pyango/4.png"],
+            ["/pictures/projects/pyango/5.png", "/pictures/projects/pyango/6.png", "/pictures/projects/pyango/7.png",],
+            ["/pictures/projects/pyango/8.png"],
+            ["/pictures/projects/pyango/9.png"],
+            ["/pictures/projects/pyango/10.png"]
+        ]
     },
     {
         id: 11,
@@ -139,7 +183,23 @@ const data = [
         img: "/pictures/cards/softphone.png",
         logo: "/pictures/logos/cardinal.png",
         title: "Softphone",
-        tags: ["Design System", "App Design", "UX Design"]
+        tags: ["Design System", "App Design", "UX Design"],
+        images: [
+            ["/pictures/projects/softphone/1.png"],
+            ["/pictures/projects/softphone/2.png", "/pictures/projects/softphone/3.png"],
+            ["/pictures/projects/softphone/4.png", "/pictures/projects/softphone/5.png"],
+            ["/pictures/projects/softphone/6.png"],
+            ["/pictures/projects/softphone/7.png","/pictures/projects/softphone/8.png", "/pictures/projects/softphone/9.png"],
+            ["/pictures/projects/softphone/10.png"],
+            ["/pictures/projects/softphone/11.png"],
+            ["/pictures/projects/softphone/12.png"],
+            ["/pictures/projects/softphone/13.png"],
+            ["/pictures/projects/softphone/14.png", "/pictures/projects/softphone/15.png"],
+            ["/pictures/projects/softphone/16.png", "/pictures/projects/softphone/17.png"],
+            ["/pictures/projects/softphone/18.png"],
+            ["/pictures/projects/softphone/19.png"],
+            ["/pictures/projects/softphone/20.png"],
+        ]
     },
     {
         id: 13,

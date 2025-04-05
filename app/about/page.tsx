@@ -15,7 +15,6 @@ export default function About() {
                     <Carousel />
                     <Description />
                 </div>
-                <img src="/pictures/about/nextproject.png" alt="" className="mt-10 p-2"/>
             </main>
         </>
     )
