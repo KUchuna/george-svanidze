@@ -9,8 +9,8 @@ export default function Home() {
       <Header 
         mainPage
       />
-      <main className="text-5xl font-grotesk flex justify-center items-center lg:mt-20 mt-4 text-center">
-        <div className="lg:columns-4 lg:block flex flex-col lg:gap-3 gap-5 px-[0.625rem] pb-16 w-full">
+      <main className="text-5xl font-grotesk flex justify-center items-center lg:mt-20 pt-4 md:pt-0 text-center bg-white dark:bg-[#141414] rounded-b-2xl lg:rounded-b-none">
+        <div className="lg:columns-4 lg:block flex flex-col lg:gap-3 gap-5 px-[0.625rem] pb-16 w-full ">
           {data.map((card, index) => {
             return (
               <Card 

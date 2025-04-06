@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Footer() {
 
     return (
-        <footer className="bg-black dark:bg-[#232323] pt-[10.625rem] pb-[13.75rem] px-8 flex lg:flex-row flex-col justify-between mt-auto font-grotesk gap-[74px] lg:gap-0">
+        <footer className="bg-black dark:bg-[#232323] lg:pt-[10.625rem] lg:pb-[13.75rem] lg:px-8 pt-[74px] pb-10 px-1 flex lg:flex-row flex-col justify-between mt-auto font-grotesk gap-[74px] lg:gap-0">
              <div className="flex gap-8 w-full">
                 <Image src="/pictures/giorgi.jpeg" alt="Giorgi Svanidze" width={246} height={246} className="lg:rounded-3xl rounded-2xl object-cover lg:max-w-[246px] lg:max-h-[246px] lg:min-w-[246px] lg:min-h-[246px] max-w-[72px] max-h-[72px] min-w-[72px] min-h-[72px] w-full h-full select-none" unoptimized/>
                 <div className="h-full flex justify-between flex-col font-medium text-gray-2 lg:text-[4rem] text-xl w-full lg:leading-none">
