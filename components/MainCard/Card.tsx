@@ -43,8 +43,8 @@ export default function Card(props: CardProps) {
     if (!mounted) return null
 
     return (
-        <div className={`flex flex-col justify-start items-start gap-1 break-inside-avoid cursor-pointer ${props.index != 0 && "mt-6"} ${props.index == 3 ? "mb-[100rem]" : ""}`} onClick={() => handleClick()}>
-            <Image src={image} alt="hero" width={100} height={100} className="mb-1 min-w-full min-h-full transition-opacity opacity-0 duration-200" onLoad={(event) => event.currentTarget.classList.remove("opacity-0")} quality={100} priority loading="eager" unoptimized />
+        <div className={`flex flex-col justify-start items-start gap-1 break-inside-avoid cursor-pointer ${props.index != 0 && "lg:mt-6"} ${props.index == 3 ? "lg:mb-[100rem]" : ""}`} onClick={() => handleClick()}>
+            <Image src={image} alt="hero" width={100} height={100} className="mb-1 lg:min-w-full lg:min-h-full lg:h-full h-[376px] rounded-xl lg:rounded-none object-cover min-w-full transition-opacity opacity-0 duration-200" onLoad={(event) => event.currentTarget.classList.remove("opacity-0")} quality={100} priority loading="eager" unoptimized />
             <span className="text-[1rem] font-medium">
                 {props.title} 
             </span>

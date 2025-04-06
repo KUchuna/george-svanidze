@@ -11,7 +11,7 @@ export default function Header({mainPage}: HeaderProps) {
     return (
         <header className={`flex flex-col ${mainPage ? "" : "sticky top-0 z-50 bg-white dark:bg-[#141414]"}`}>
             {mainPage ? 
-                <h1 className="font-grotesk uppercase text-[11.6vw] leading-none font-medium select-none text-center">george svanidze</h1>
+                <h1 className="font-grotesk uppercase lg:text-[11.6vw] text-[11vw] lg:leading-none font-medium select-none text-center">george svanidze</h1>
                 : 
                 <div className="w-full flex justify-center">
                     <Link href="/" className="w-fit">
