@@ -20,9 +20,47 @@ export default function NavCard(props: NavCardProps) {
         router.push(`/projects/${props.id}`)
     }
 
+    const getBorderColorById = (id: number) => {
+        switch (id) {
+            case 1:
+                return "#00CCD6";
+            case 2:
+                return "#097C69";
+            case 3:
+                return "#FF4A26";
+            case 4:
+                return "#6CA5EA";
+            case 5:
+                return "#96DBEB";
+            case 6:
+                return "#496D84";
+            case 7:
+                return "#499439";
+            case 8:
+                return "#F54700";
+            case 9:
+                return "#73BD1A";
+            case 10:
+                return "#D4323D";
+            case 11:
+                return "#FFFFFF";
+            case 12:
+                return "#96DBEB";
+            case 13:
+                return "#E40048";
+            default:
+                return "black";
+        }
+    };
+
     return (
-        <div 
-            className={`${props.currentId == props.id ? "border-[1px] border-black dark:border-white" : ""} p-3 flex justify-start items-center bg-[#F4F4F4] dark:bg-[#232323] min-w-[350px] rounded-xl cursor-pointer`}
+        <div
+            className={`p-3 flex justify-start items-center bg-[#F4F4F4] dark:bg-[#232323] min-w-[350px] rounded-xl cursor-pointer ${
+                props.currentId === props.id ? "border-[1px]" : ""
+            }`}
+            style={{
+                borderColor: props.currentId === props.id ? getBorderColorById(props.id) : undefined,
+            }}
             onClick={handleClick}
         >
             <Image src={props.logo} alt="" width={56} height={56} unoptimized/>

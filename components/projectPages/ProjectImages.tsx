@@ -15,7 +15,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
   const totalImages = project?.images?.flat().length || 0;
 
   useEffect(() => {
-    if (imagesLoaded >= totalImages/2 && totalImages > 0) {
+    if (imagesLoaded === totalImages && totalImages > 0) {
       setAllImagesLoaded(true);
     }
   }, [imagesLoaded, totalImages]);
@@ -24,12 +24,18 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
     return <NotFound innerpage />;
   }
 
+  const progress = totalImages > 0 ? Math.round((imagesLoaded / totalImages) * 100) : 0;
+
+
   return (
         <main className="flex flex-col p-2 gap-3">
             {!allImagesLoaded && (
                 <div className="w-full h-[100vh] flex flex-col justify-center items-center gap-4">
                     <p className="font-grotesk uppercase text-4xl">Images are loading...</p>
-                    <Loader />
+                    <Loader 
+                      progress={progress}
+                      id={projectId}
+                    />
                 </div>
             )}
         {project?.images?.map((row, rowIndex) => (
