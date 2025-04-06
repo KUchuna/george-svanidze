@@ -44,7 +44,7 @@ export default function Card(props: CardProps) {
 
     return (
         <div className={`flex flex-col justify-start items-start gap-1 break-inside-avoid cursor-pointer ${props.index != 0 && "lg:mt-6"} ${props.index == 3 ? "lg:mb-[100rem]" : ""}`} onClick={() => handleClick()}>
-            <Image src={image} alt="hero" width={100} height={100} className="mb-1 lg:min-w-full lg:min-h-full lg:h-full h-[376px] rounded-xl lg:rounded-none object-cover min-w-full transition-opacity opacity-0 duration-200 object-top" onLoad={(event) => event.currentTarget.classList.remove("opacity-0")} quality={100} priority loading="eager" unoptimized />
+            <Image src={image} alt="hero" width={100} height={100} className={`mb-1 lg:min-w-full lg:min-h-full lg:h-full h-[376px] rounded-xl lg:rounded-none object-cover min-w-full transition-opacity opacity-0 duration-200 ${props.id === 1 || 3 || 6 ? "object-top" : ""}`} onLoad={(event) => event.currentTarget.classList.remove("opacity-0")} quality={100} priority loading="eager" unoptimized />
             <span className="lg:text-[1rem] text-sm font-medium">
                 {props.title} 
             </span>
