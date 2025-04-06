@@ -21,7 +21,7 @@ export default function Header({mainPage}: HeaderProps) {
             }
             <div className="px-2 dark:bg-[#141414]">
                 <div className="flex justify-between border-b border-[#EBEBEB] dark:border-[#353535] pb-6 font-inter">
-                    <span className="text-gray-1">
+                    <span className="text-gray-1 text-[0.75rem] lg:text-[1rem]">
                         Product
                         <br />
                         Designer
