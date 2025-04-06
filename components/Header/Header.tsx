@@ -9,7 +9,7 @@ interface HeaderProps {
 export default function Header({mainPage}: HeaderProps) {
     
     return (
-        <header className={`flex flex-col ${mainPage ? "" : "sticky top-0 z-50 bg-white dark:bg-[#141414]"}`}>
+        <header className={`flex flex-col ${mainPage ? "" : "sticky top-0 z-50 bg-white dark:bg-[#141414]"} sticky top-0 z-50 bg-white dark:bg-[#141414] lg:static`}>
             {mainPage ? 
                 <h1 className="font-grotesk uppercase lg:text-[11.6vw] text-[11vw] lg:leading-none font-medium select-none text-center dark:bg-[#141414]">george svanidze</h1>
                 : 
