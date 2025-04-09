@@ -34,7 +34,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
   return (
         <div className="flex flex-col p-2 gap-3">
             {!allImagesLoaded && (
-                <div className="w-full h-[54.9vh] flex flex-col justify-end items-left gap-4">
+                <div className="w-full h-[80vh] flex flex-col justify-end items-left gap-4">
                     <Loader 
                       progress={progress}
                       id={projectId}
