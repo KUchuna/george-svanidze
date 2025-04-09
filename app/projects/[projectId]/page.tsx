@@ -24,7 +24,7 @@ export default async function Page({ params }: { params: Promise<{ projectId: st
       <NavCarousel 
         id={projectId}
       />
-      <main className="flex flex-col p-2 gap-3">
+      <main className="flex flex-col p-2 gap-3 dark:bg-[#141414] bg-[white]">
           <ProjectImages 
             projectId={projectId}
           />

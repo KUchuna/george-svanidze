@@ -1,5 +1,5 @@
 export default function Loader({ progress, id }: { progress: number, id: number }) {
-  const radius = 100;
+  const radius = 80;
   const stroke = 2;
   const normalizedRadius = radius - stroke * 0.5;
   const circumference = 2 * Math.PI * normalizedRadius;

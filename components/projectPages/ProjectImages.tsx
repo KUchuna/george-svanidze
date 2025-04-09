@@ -32,10 +32,9 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
   }
 
   return (
-        <main className="flex flex-col p-2 gap-3">
+        <div className="flex flex-col p-2 gap-3">
             {!allImagesLoaded && (
-                <div className="w-full h-[100vh] flex flex-col justify-center items-center gap-4">
-                    <p className="font-grotesk uppercase text-4xl">Images are loading...</p>
+                <div className="w-full h-[54.9vh] flex flex-col justify-end items-left gap-4">
                     <Loader 
                       progress={progress}
                       id={projectId}
@@ -53,8 +52,8 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
                   <Image
                   src={src.replace('./public', '')}
                   alt=""
-                  width={2100}
-                  height={1500}
+                  width={2000}
+                  height={1000}
                   className={`h-full ${row.length > 1 ? "flex-1 basis-0" : "w-full"}`}
                   priority
                   quality={100}
@@ -64,6 +63,6 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
             ))}
             </div>
         ))}
-        </main>
+        </div>
   );
 }

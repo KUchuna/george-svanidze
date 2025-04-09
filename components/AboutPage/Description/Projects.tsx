@@ -20,11 +20,11 @@ export default function Projects() {
         <>
             {aboutProjects.map((project, index) => (
                 <div key={index} className="flex flex-col font-grotesk">
-                    <img src={resolvedTheme == "dark" ? project.imgDark : project.img} alt="project image" className="h-[80px] w-[80px] mb-4"/>
+                    <img src={resolvedTheme == "dark" ? project.imgDark : project.img} alt="project image" className="2xl:h-[80px] 2xl:w-[80px] h-[64px] w-[64px] mb-4"/>
                     <span className="font-bold text-lg">{project.title}</span>
                     <span className="font-bold text-lg">{project.date}</span>
                     <span className="font-bold text-lg">{project.region}</span>
-                    <div className="flex flex-col gap-4 text-gray-4 font-inter mt-6">
+                    <div className="flex flex-col gap-4 text-gray-4 font-inter md:mt-6 mt-4 md:text-[1rem] text-sm">
                         <p>{project.p1}</p>
                         <p>{project.p2}</p>
                     </div>

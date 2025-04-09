@@ -33,14 +33,14 @@ const data = [
         logo: "/pictures/logos/musicroom.png",
         imgDark: "/pictures/cards/musicroomdark.png",
         title: "Music Room",
-        tags: ["Design System", "App Design", "UX Design"]
+        tags: ["Design System", "Website", "UX Design"]
     },
     {
         id: 4,
         img: "/pictures/cards/mila.png",
         logo: "/pictures/logos/mila.png",
         title: "Mila",
-        tags: ["Design System", "App Design", "UX Design"],
+        tags: ["Design System", "Website", "UX Design"],
         images: [
             ["/pictures/projects/mila/1.png"],
             ["/pictures/projects/mila/2.png", "/pictures/projects/mila/3.png"],
@@ -60,7 +60,7 @@ const data = [
         img: "/pictures/cards/cardinal.png",
         logo: "/pictures/logos/cardinal.png",
         title: "Cardinal Financial",
-        tags: ["Design System", "App Design", "UX Design"],
+        tags: ["Design System", "Dashboard Design", "App Design", "UX Design", "Software Design"],
         images: [
             ["/pictures/projects/cardinal/1.png"],
             ["/pictures/projects/cardinal/2.png", "/pictures/projects/cardinal/3.png"],
@@ -79,14 +79,14 @@ const data = [
         logo: "/pictures/logos/inclassica.png",
         imgDark: "/pictures/cards/inclassicadark.png",
         title: "Inclassica",
-        tags: ["Design System", "App Design", "UX Design"]
+        tags: ["Website", "UX Design"]
     },
     {
         id: 7,
         img: "/pictures/cards/kita.png",
         logo: "/pictures/logos/kita.png",
         title: "Kita",
-        tags: ["Design System", "App Design", "UX Design"],
+        tags: ["Design System", "Website", "UX Design"],
         images: [
             ["/pictures/projects/kita/1.png"],
             ["/pictures/projects/kita/2.png", "/pictures/projects/kita/3.png"],
@@ -101,7 +101,7 @@ const data = [
         img: "/pictures/cards/movan.png",
         logo: "/pictures/logos/movan.png",
         title: "Movan",
-        tags: ["Design System", "App Design", "UX Design"],
+        tags: ["Design System", "Website", "UX Design"],
         images: [
             ["/pictures/projects/movan/1.png"],
             ["/pictures/projects/movan/2.png", "/pictures/projects/movan/3.png"],
@@ -123,7 +123,7 @@ const data = [
         img: "/pictures/cards/galileo.png",
         logo: "/pictures/logos/galileo.png",
         title: "Galileo",
-        tags: ["Design System", "App Design", "UX Design"],
+        tags: ["Design System", "Website", "UX Design", "Brand Design"],
         images: [
             ["/pictures/projects/galileo/1.png"],
             ["/pictures/projects/galileo/2.png", "/pictures/projects/galileo/3.png"],
@@ -143,7 +143,7 @@ const data = [
         img: "/pictures/cards/pyango.png",
         logo: "/pictures/logos/pyango.png",
         title: "Pyango GmbH",
-        tags: ["Design System", "App Design", "UX Design"],
+        tags: ["Design System", "Website", "UX Design"],
         images: [
             ["/pictures/projects/pyango/1.png"],
             ["/pictures/projects/pyango/2.png", "/pictures/projects/pyango/3.png"],
@@ -159,7 +159,7 @@ const data = [
         img: "/pictures/cards/tier1.png",
         logo: "/pictures/logos/tier1.png",
         title: "Tier1",
-        tags: ["Design System", "App Design", "UX Design"],
+        tags: ["Design System", "Website", "UX Design"],
         images: [
             ["/pictures/projects/tier1/1.png"],
             ["/pictures/projects/tier1/2.png", "/pictures/projects/tier1/3.png"],
@@ -183,7 +183,7 @@ const data = [
         img: "/pictures/cards/softphone.png",
         logo: "/pictures/logos/cardinal.png",
         title: "Softphone",
-        tags: ["Design System", "App Design", "UX Design"],
+        tags: ["Design System", "Software Design", "UX Design"],
         images: [
             ["/pictures/projects/softphone/1.png"],
             ["/pictures/projects/softphone/2.png", "/pictures/projects/softphone/3.png"],
@@ -206,7 +206,7 @@ const data = [
         img: "/pictures/cards/nairi.png",
         logo: "/pictures/logos/nairi.png",
         title: "Nairi App",
-        tags: ["Design System", "App Design", "UX Design"]
+        tags: ["Design System", "App Design", "UX Design", "Brand Design"]
     },
 ]
 

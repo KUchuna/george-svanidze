@@ -19,9 +19,9 @@ export default function Header({mainPage}: HeaderProps) {
                     </Link>
                 </div>
             }
-            <div className="px-2 dark:bg-[#141414]">
+            <div className="md:px-2 px-1 dark:bg-[#141414]">
                 <div className="flex justify-between border-b border-[#EBEBEB] dark:border-[#353535] pb-6 font-inter">
-                    <span className="text-gray-1 text-[0.75rem] lg:text-[1rem]">
+                    <span className="text-gray-1 text-[0.75rem] md:text-[1rem]">
                         Product
                         <br />
                         Designer
