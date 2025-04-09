@@ -45,9 +45,8 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
                 allImagesLoaded ? "" : "hidden"}`}
             >
             {row.map((src, index) => (
-              <div className="w-full ">
+              <div className="w-full" key={index}>
                   <Image
-                  key={index}
                   src={src.replace('./public', '')}
                   alt=""
                   width={2100}
