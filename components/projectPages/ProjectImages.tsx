@@ -3,7 +3,7 @@
 import NotFound from "@/app/not-found";
 import data from "@/public/lib/projectData";
 import Image from "next/image";
-import { SyntheticEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Loader from "../Loader/Loader";
 
 export default function ProjectImages({ projectId }: { projectId: number }) {
