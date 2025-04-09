@@ -3,7 +3,7 @@
 import NotFound from "@/app/not-found";
 import data from "@/public/lib/projectData";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { SyntheticEvent, useEffect, useState } from "react";
 import Loader from "../Loader/Loader";
 
 export default function ProjectImages({ projectId }: { projectId: number }) {
@@ -26,6 +26,10 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
 
   const progress = totalImages > 0 ? Math.round((imagesLoaded / totalImages) * 100) : 0;
 
+
+  function OnLoad() {
+    setImagesLoaded((prev) => prev + 1)
+  }
 
   return (
         <main className="flex flex-col p-2 gap-3">
@@ -54,8 +58,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
                   className={`h-full ${row.length > 1 ? "flex-1 basis-0" : "w-full"}`}
                   priority
                   quality={100}
-                  loading="eager"
-                  onLoad={() => setImagesLoaded((prev) => prev + 1)}
+                  onLoad={() => OnLoad()}
                   />
               </div>
             ))}
