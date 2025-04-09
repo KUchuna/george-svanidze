@@ -45,18 +45,20 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
                 allImagesLoaded ? "" : "hidden"}`}
             >
             {row.map((src, index) => (
-                <Image
-                key={index}
-                src={src.replace('./public', '')}
-                alt=""
-                width={100}
-                height={100}
-                className={`h-full ${row.length > 1 ? "flex-1 basis-0" : "w-full"}`}
-                priority
-                loading="eager"
-                unoptimized
-                onLoad={() => setImagesLoaded((prev) => prev + 1)}
-                />
+              <div className="w-full ">
+                  <Image
+                  key={index}
+                  src={src.replace('./public', '')}
+                  alt=""
+                  width={2100}
+                  height={1500}
+                  className={`h-full ${row.length > 1 ? "flex-1 basis-0" : "w-full"}`}
+                  priority
+                  quality={100}
+                  loading="eager"
+                  onLoad={() => setImagesLoaded((prev) => prev + 1)}
+                  />
+              </div>
             ))}
             </div>
         ))}
