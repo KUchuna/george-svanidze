@@ -68,7 +68,7 @@ export default function Loader({ progress, id }: { progress: number, id: number 
         y="50%"
         textAnchor="middle"
         dy=".3em"
-        className="fill-black dark:fill-white font-medium text-lg"
+        className="fill-black dark:fill-white font-medium font-grotesk text-5xl"
       >
         {progress}%
       </text>
