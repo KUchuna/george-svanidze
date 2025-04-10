@@ -1,3 +1,4 @@
+import Header from "@/components/Header/Header";
 import NavCarousel from "@/components/projectPages/NavBar/NavCarousel";
 import ProjectImages from "@/components/projectPages/ProjectImages";
 import data from "@/public/lib/projectData"
@@ -21,10 +22,11 @@ export default async function Page({ params }: { params: Promise<{ projectId: st
   
    return (
     <>
+      <Header />
       <NavCarousel 
         id={projectId}
       />
-      <main className="flex flex-col p-2 gap-3 dark:bg-[#141414] bg-[white]">
+      <main className="flex h-[100vh] flex-col md:p-2 p-1 gap-3 dark:bg-[#141414] bg-[white]">
           <ProjectImages 
             projectId={projectId}
           />

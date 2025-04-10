@@ -8,7 +8,7 @@ export default function NavCarousel({id}: {id: number}) {
     const [emblaRef] = useEmblaCarousel({ dragFree: true})
 
     return (
-        <nav className="px-2 py-3 h-max dark:bg-[#141414] bg-white">
+        <nav className="px-1 md:py-2 py-3 h-max dark:bg-[#141414] bg-white">
             <div className="h-max w-full relative overflow-hidden select-none" ref={emblaRef}>
                 <div className="flex gap-2 h-max w-full">
                 {data.map((card, index) => (

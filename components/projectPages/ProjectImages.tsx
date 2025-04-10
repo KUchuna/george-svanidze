@@ -32,9 +32,9 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
   }
 
   return (
-        <div className="flex flex-col p-2 gap-3">
+        <div className="flex flex-col md:gap-3 gap-1 h-[60%]">
             {!allImagesLoaded && (
-                <div className="w-full h-[54.9vh] flex flex-col justify-end items-left gap-4">
+                <div className="w-full h-full flex flex-col justify-end items-left gap-4">
                     <Loader 
                       progress={progress}
                       id={projectId}
@@ -44,7 +44,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
         {project?.images?.map((row, rowIndex) => (
             <div
             key={rowIndex}
-            className={`flex gap-3 w-full ${row.length > 1 ? "flex-row" : "flex-col"} ${
+            className={`flex md:gap-3 gap-1 w-full ${row.length > 1 ? "flex-row" : "flex-col"} ${
                 allImagesLoaded ? "" : "hidden"}`}
             >
             {row.map((src, index) => (
