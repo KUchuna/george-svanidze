@@ -32,7 +32,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
   }
 
   return (
-        <div className="flex flex-col md:gap-3 gap-1 h-[60%]">
+        <div className="flex flex-col md:gap-3 gap-1 h-full">
             {!allImagesLoaded && (
                 <div className="w-full h-full flex flex-col justify-end items-left gap-4">
                     <Loader 
