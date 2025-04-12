@@ -3,7 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: "George",
+  title: "George Svanidze",
   description: "Personal portfolio website of UI/UX Designer, Giorgi Svanidze",
 };
 
