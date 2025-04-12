@@ -9,6 +9,8 @@ export const metadata: Metadata = {
     images: [{
       url: "https://ibb.co/0pGT1NYk",
       width: 1200,
+      height: 630,
+      alt: "George Svanidze Portfolio",
     }]
   },
 };
