@@ -35,8 +35,16 @@ export default function Card(props: CardProps) {
         <div className={`flex flex-col justify-start items-start gap-1 break-inside-avoid ${props.id == 2 || props.id == 3 || props.id == 6 || props.id == 13 ? "cursor-not-allowed" : "cursor-pointer"} 
             ${props.index != 0 && "lg:mt-6"} ${props.index == 3 ? "2xl:mb-[50rem] lg:mb-[50rem]" : ""}`} 
             onClick={() => handleClick()}>
-            <Image src={props.img} alt="project" width={1000} height={1000} className={`mb-1 lg:min-w-full lg:min-h-full lg:h-full h-[376px] rounded-xl lg:rounded-none object-cover min-w-full transition-opacity opacity-0 duration-200 ${[1, 3].includes(props.id) ? "object-top" : "object-center"} lg:object-center`} 
-                onLoad={(event) => event.currentTarget.classList.remove("opacity-0")} quality={100} priority loading="eager"  />
+            <div className="relative">    
+                <Image src={props.img} alt="project" width={1000} height={1000} className={`mb-1 lg:min-w-full lg:min-h-full lg:h-full h-[376px] rounded-xl lg:rounded-none object-cover min-w-full transition-opacity opacity-0 duration-200 ${[1, 3].includes(props.id) ? "object-top" : "object-center"} lg:object-center`} 
+                    onLoad={(event) => event.currentTarget.classList.remove("opacity-0")} quality={100} priority loading="eager"  />
+                {(props.id == 2 || props.id == 3 || props.id == 6 || props.id == 13) &&
+                    <div className="absolute top-0 left-0 w-full h-full text-white flex justify-center items-center flex-col">
+                        <span className="font-grotesk font-bold text-xl lg:text-3xl">Not ready yet</span>
+                        <p className="font-grotesk text-lg lg:text-xl">I’m doing my best to finalize this project</p>
+                    </div>
+                }
+            </div>
             <span className="lg:text-[1rem] text-sm font-medium">
                 {props.title} 
             </span>
