@@ -18,7 +18,8 @@ const data = [
             ["/pictures/projects/tbc/19.png", "/pictures/projects/tbc/20.png"],
             ["/pictures/projects/tbc/21.png", "/pictures/projects/tbc/22.png"],
             ["/pictures/projects/tbc/23.png"]
-        ]
+        ],
+        description: ""
     },
     {
         id: 2,
@@ -53,7 +54,10 @@ const data = [
             ["/pictures/projects/mila/15.png", "/pictures/projects/mila/16.png"],
             ["/pictures/projects/mila/17.png"],
             ["/pictures/projects/mila/18.png"],
-        ]
+        ],
+        description: "<div>MILA</div><p>MILA is an interactive web application designed to help children learn new languages in a fun, engaging, and playful way. Similar in concept to Duolingo, MILA focuses on teaching kids new words and phrases through interactive lessons and games.</p><span>What We Did:</span><p>We designed a fully interactive, child-friendly web app experience where learning feels like play. The platform was built to make language learning easy and enjoyable for young users, with vibrant visuals, intuitive navigation, and engaging activities tailored to their age group.</p><span>Key Features:</span><p>Interactive Learning Pages: Developed fun, interactive screens where children could practice new words and phrases through games, animations, and simple quizzes.</p><p>Playful Visual Language: Created a colorful, cheerful visual style with illustrations and friendly typography to capture children’s attention and keep them motivated.</p><p>User-Friendly Experience: Designed intuitive navigation and clear progress feedback to help kids (and parents) track their learning journey effortlessly.</p><span>Outcome:</span><p>MILA offers a playful, easy-to-use learning environment where children can pick up new languages while having a good time — turning education into an enjoyable daily habit.</p>",
+        teamLead: "Miroslav Metodiev",
+        designers: ["Alli Azzeti", "George Svanidze","Jason Angeles", "Jacob Barcar"]
     },
     {
         id: 5,
@@ -71,7 +75,10 @@ const data = [
             ["/pictures/projects/cardinal/10.png", "/pictures/projects/cardinal/11.png"],
             ["/pictures/projects/cardinal/12.png"],
             ["/pictures/projects/cardinal/13.png"]
-        ]
+        ],
+        description: "<div>Cardinal Financial</div><p>Cardinal Financial, a leading loan company in the USA, approached our team with the ambitious goal of transforming their digital platform into a more efficient, user-friendly experience. As part of a team of four designers, led by our Head of Design, we undertook the challenge of redesigning the entire platform—an extensive project spanning approximately 3,000 pages.</p><p>One of the key aspects of our redesign was the development of a comprehensive design system, ensuring consistency, scalability, and seamless user interaction across the platform. The design system became a crucial asset, allowing for future growth and easier implementation of new features.</p><p>Throughout the project, we maintained close collaboration with our client, holding weekly calls to present our progress, explain design decisions, and align on business goals. This iterative approach ensured that every aspect of the redesign was tailored to meet both user needs and company objectives.</p><p>Once the new platform was launched, we conducted interviews with real users to gather feedback on the impact of our work. The results were overwhelmingly positive—users found the platform significantly easier to navigate, their tasks were completed more efficiently, and overall usage time decreased. The redesign not only enhanced productivity but also improved the overall user experience, reinforcing the success of our efforts.</p><p>The Cardinal Financial redesign was a challenging yet rewarding project that showcased the power of thoughtful design, collaboration, and user-centered solutions. The client and users alike were thrilled with the outcome, making this project a testament to the value of great UX/UI design in the fintech space.</p>",
+        teamLead: "Miroslav Metodiev",
+        designers: ["Alli Azzeti", "George Svanidze","Jason Angeles", "Jacob Barcar"]
     },
     {
         id: 6,
@@ -79,7 +86,7 @@ const data = [
         logo: "/pictures/logos/inclassica.png",
         imgDark: "/pictures/cards/inclassicadark.png",
         title: "Inclassica",
-        tags: ["Website", "UX Design"]
+        tags: ["Design System", "Website", "UX Design"]
     },
     {
         id: 7,
@@ -94,7 +101,10 @@ const data = [
             ["/pictures/projects/kita/5.png", "/pictures/projects/kita/6.png","/pictures/projects/kita/7.png"],
             ["/pictures/projects/kita/8.png"],
             ["/pictures/projects/kita/9.png"],
-        ]
+        ],
+        description: "<div>Kita</div><p>KITA is a kindergarten based in Switzerland, dedicated to providing a nurturing, safe, and creative environment for children aged 0–5 years. The goal of this project was to create a welcoming, informative online presence that introduces the kindergarten to families and helps them feel confident about choosing KITA for their children.</p><span>What We Did:</span><p>  We delivered a full website design along with a fresh visual identity that reflects KITA’s warm, child-friendly atmosphere. From colors to typography, every detail was carefully crafted to communicate trust, care, and a playful spirit — while keeping the platform easy to navigate for parents.</p><span>Key Features:</span><ul><li>Branding Development: Defined a visual language with soft, cheerful colors, rounded typography, and playful graphic elements tailored to early childhood audiences and their families.</li><li>Website Design: Designed an informative, easy-to-use website that introduces KITA’s philosophy, daily activities, facilities, and enrollment details in a clear, inviting way.</li><li>Family-Centered Focus: Ensured all content and visuals spoke directly to parents, making them feel welcome, reassured, and well-informed about the kindergarten’s environment and values.</li></ul><span>Outcome:</span><p> The result is a warm, approachable digital presence that accurately represents KITA’s caring atmosphere and makes it easy for families to learn about the kindergarten, fostering trust and connection from the first visit.</p>",
+        teamLead: "Roya Farrokhzadeh",
+        designers: ["George Svanidze", "Roya Farrokhzadeh"]
     },
     {
         id: 8,
@@ -116,7 +126,10 @@ const data = [
             ["/pictures/projects/movan/20.png"],
             ["/pictures/projects/movan/21.png"],
             ["/pictures/projects/movan/22.png"]
-        ]
+        ],
+        description: "<div>Movan</div><p>Movan is a car detailing company offering a range of services to keep vehicles looking brand new. The main goal of this project was to create a website that effectively showcases the company’s services, pricing, and booking options for customers.</p><span>What We Did:</span><p> We designed a clean, user-friendly website that clearly presents Movan’s detailing services, making it easy for customers to browse, compare pricing, and book the services that best suit their needs.</p><span>Key Features:</span><ul><li>Service & Pricing Overview: Presented detailed descriptions of each service, along with transparent pricing, helping customers make informed decisions.</li><li>Simple Booking System: Designed an intuitive booking interface that allowed users to schedule their preferred services directly from the website.</li><li>Re sponsive Design: Ensured the site was fully responsive, providing a seamless experience for customers booking services from any device.</li></ul><span>Outcome:</span><p> Movan’s website now serves as a streamlined digital hub for customers to quickly learn about services, view pricing, and easily schedule their car detailing appointments, all in one place.</p>",
+        type: "Freelance",
+        designers: ["George Svanidze"]
     },
     {
         id: 9,
@@ -136,7 +149,10 @@ const data = [
             ["/pictures/projects/galileo/16.png"],
             ["/pictures/projects/galileo/17.png"],
             ["/pictures/projects/galileo/18.png"]
-        ]
+        ],
+        description: "<div>Galileo Fitness</div><p>Galileo Fitness is a Georgia-based gym offering a range of fitness programs and personal training services. The goal of this project was to create an informative, user-friendly website that would help existing and potential customers easily access gym details, trainer schedules, and personal account information.</p><span>What We Did:</span><p>We designed and developed a comprehensive website that not only introduced the gym and its services but also offered a convenient user room for members to manage their fitness journey.</p><span>Key Features:</span><p>Trainer & Schedule Info: Created a clear, easy-to-navigate section where users could review trainer profiles, class types, and daily schedules.</p><p>Personal User Room: Designed a member login area where users could view their assigned trainers, track remaining classes, see upcoming payment dates, and stay organized.</p><p>Live Gym Capacity Feature: Added a unique real-time feature displaying how many people were currently in the gym — helping members plan their visits better.</p><p>Informative & Friendly Design: Delivered a clean, modern website layout with engaging visuals and a welcoming tone aligned with the gym’s community-driven spirit.</p><span>Outcome:</span><p>The new website streamlined customer interactions, improved access to key information, and enhanced the overall member experience — turning Galileo Fitness into a more connected and transparent space for its fitness community.</p>",
+        type: "Freelance",
+        designers: ["George Svanidze"]
     },
     {
         id: 10,
@@ -152,7 +168,10 @@ const data = [
             ["/pictures/projects/pyango/8.png"],
             ["/pictures/projects/pyango/9.png"],
             ["/pictures/projects/pyango/10.png"]
-        ]
+        ],
+        description: "<div>Pyango GmbH</div><p>Pyango GmbH is a digital solutions company that partners with startups to help them build, grow, and scale their ideas. The existing website faced significant challenges in both user experience and messaging clarity. It wasn’t effectively communicating what the company offered or how it supported its target audience.</p><span>What We Did:</span><p>We completely redesigned the website from scratch — rethinking the user experience, restructuring the information architecture, and addressing major copywriting issues that made it difficult for potential clients to understand the company’s value proposition.Our goal was to transform a formal, overly technical platform into a friendly, approachable, and startup-focused website that speaks the language of entrepreneurs and innovators.</p><span>Key Features:</span><ul><li>UX Overhaul: Simplified user flows and navigation, making it easy for visitors to explore services and understand how Pyango can support their business.</li><li>Copywriting Revamp: Rewrote all website copy to be clear, engaging, and aligned with the needs and mindset of startups.</li><li>Visual Refresh: Updated the visual identity and design language, shifting from a corporate, formal aesthetic to a modern, vibrant, and approachable look and feel.</li></ul><span>Outcome:</span><p> The new website positions Pyango as a supportive and expert partner for startups, clearly outlining its services and value in a friendly, easy-to-understand way</p>",
+        teamLead: "George Svanidze",
+        designers: ["George Svanidze","Roya Ferrokhzadeh"]
     },
     {
         id: 11,
@@ -176,7 +195,10 @@ const data = [
             ["/pictures/projects/tier1/23.png", "/pictures/projects/tier1/24.png", "/pictures/projects/tier1/25.png", "/pictures/projects/tier1/26.png"],
             ["/pictures/projects/tier1/27.png"],
             ["/pictures/projects/tier1/28.png"],
-        ]
+        ],
+        description: "<div>Tier 1</div><p>Tier 1 is a Korean-based Web3 organization focused on providing exclusive benefits to its club members through a unique system of unlocking digital packs. The goal of this project was to create a dynamic platform where members could unlock rewards and access premium features based on their membership level.</p><span>What We Did:</span><p> We designed a cutting-edge Web3-based website that allows Tier 1 members to unlock exclusive packs and enjoy a variety of benefits, enhancing the user experience while promoting engagement within the digital space.</p><span>Key Features:</span><ul><li>Web3 Integration: Developed a platform that seamlessly integrates blockchain technology to allow members to unlock digital packs and receive special rewards.</li><li>Exclusive Member Benefits: Created a rewards system where Tier 1 members could access premium features, exclusive content, and benefits tailored to their status.</li><li>Intuitive User Interface: Designed a clean, user-friendly interface that makes navigating through the Web3 features easy and accessible for all members, regardless of their experience with blockchain technology</li></ul><span>Outcome:</span><p>The Tier 1 platform successfully introduced an engaging Web3 experience for members, increasing participation and creating a seamless, rewarding journey for users while elevating the organization’s digital presence.</p>",
+        teamLead: "Miroslav Metodiev",
+        designers: ["Alli Azzeti", "George Svanidze","Jason Angeles", "Jacob Barcar"]
     },
     {
         id: 12,
@@ -199,7 +221,10 @@ const data = [
             ["/pictures/projects/softphone/18.png"],
             ["/pictures/projects/softphone/19.png"],
             ["/pictures/projects/softphone/20.png"],
-        ]
+        ],
+        description: "<div>Cardinal Financial</div><p>Cardinal Financial, a leading loan company in the USA, approached our team with the ambitious goal of transforming their digital platform into a more efficient, user-friendly experience. As part of a team of four designers, led by our Head of Design, we undertook the challenge of redesigning the entire platform—an extensive project spanning approximately 3,000 pages.</p><p>One of the key aspects of our redesign was the development of a comprehensive design system, ensuring consistency, scalability, and seamless user interaction across the platform. The design system became a crucial asset, allowing for future growth and easier implementation of new features.</p><p>Throughout the project, we maintained close collaboration with our client, holding weekly calls to present our progress, explain design decisions, and align on business goals. This iterative approach ensured that every aspect of the redesign was tailored to meet both user needs and company objectives.</p><p>Once the new platform was launched, we conducted interviews with real users to gather feedback on the impact of our work. The results were overwhelmingly positive—users found the platform significantly easier to navigate, their tasks were completed more efficiently, and overall usage time decreased. The redesign not only enhanced productivity but also improved the overall user experience, reinforcing the success of our efforts.</p><p>The Cardinal Financial redesign was a challenging yet rewarding project that showcased the power of thoughtful design, collaboration, and user-centered solutions. The client and users alike were thrilled with the outcome, making this project a testament to the value of great UX/UI design in the fintech space.</p>",
+        teamLead: "Miroslav Metodiev",
+        designers: ["Alli Azzeti", "George Svanidze","Jason Angeles", "Jacob Barcar"]
     },
     {
         id: 13,

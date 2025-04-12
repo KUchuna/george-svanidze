@@ -5,6 +5,9 @@ import data from "@/public/lib/projectData";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Loader from "../Loader/Loader";
+import ProjectDescription from "./ProjectDescription";
+import { motion } from "motion/react";
+import ProjectTeam from "./ProjectTeam";
 
 export default function ProjectImages({ projectId }: { projectId: number }) {
   const project = data.find(p => p.id === projectId);
@@ -32,6 +35,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
   }
 
   return (
+    <>
         <div className="flex flex-col md:gap-3 gap-1 h-full">
             {!allImagesLoaded && (
                 <div className="w-full h-full flex flex-col justify-end items-left gap-4 mt-auto">
@@ -48,21 +52,38 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
                 allImagesLoaded ? "" : "hidden"}`}
             >
             {row.map((src, index) => (
-              <div className={`w-full overflow-hidden ${row.length > 1 ? row.length < 3 ? "flex-1 basis-0 min-h-[190px]" : "w-full" : "w-full"} md:h-full`} key={index}>
+              <motion.div
+              key={index}
+              className={`flex md:gap-3 gap-1 w-full ${row.length > 1 ? "flex-row" : "flex-col"} ${
+                allImagesLoaded ? "" : "hidden"
+              }`}
+              initial={{ opacity: 0, height: 0 }}
+              animate={allImagesLoaded ? { opacity: 1, height: "auto" } : {}}
+              transition={{ duration: 0.5, ease: "easeOut", delay: rowIndex * 0.1 }}
+              >
                 <Image
                   src={src.replace('./public', '')}
                   alt=""
                   width={2100}
                   height={1300}
-                  className={`h-full w-full object-cover rounded-sm`}
+                  className="h-full w-full object-cover rounded-sm"
                   priority
                   quality={100}
                   onLoad={() => OnLoad()}
                 />
-              </div>            
+              </motion.div>
             ))}
             </div>
         ))}
         </div>
+        <section className="font-grotesk flex gap-16">
+          <ProjectDescription 
+            projectId={projectId}
+          />
+          <ProjectTeam 
+            projectId={projectId}
+          />
+        </section>
+    </>
   );
 }

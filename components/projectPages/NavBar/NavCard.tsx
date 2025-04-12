@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import {motion} from "motion/react";
 
 interface NavCardProps {
     index: number;
@@ -54,7 +55,7 @@ export default function NavCard(props: NavCardProps) {
     };
 
     return (
-        <div
+        <motion.div
             className={`md:p-3 p-1 flex flex-row justify-start items-center border-[1px] border-[white] dark:border-[#232323] bg-[#F4F4F4] dark:bg-[#232323] min-w-[330px] md:min-w-[350px] rounded-xl cursor-pointer h-fit ${
                 props.currentId === props.id ? "border-[1px]" : ""
             } hover:bg-[#EBEBEB] dark:hover:bg-[#2D2D2D] transition-colors duration-300 `}
@@ -62,6 +63,7 @@ export default function NavCard(props: NavCardProps) {
                 borderColor: props.currentId === props.id ? getBorderColorById(props.id) : undefined,
             }}
             onClick={handleClick}
+            whileTap={{scale: 0.95}}
         >
             <Image src={props.logo} alt="" width={56} height={56} unoptimized/>
             <div className="flex flex-col gap-[6px] ml-2">
@@ -84,6 +86,6 @@ export default function NavCard(props: NavCardProps) {
             <p id="show-more" className="text-[#878392] hover:text-black dark:hover:text-[white] duration-100">
                 Show More
             </p>
-        </div>
+        </motion.div>
     )
 }

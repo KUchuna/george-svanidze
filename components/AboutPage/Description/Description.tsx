@@ -8,7 +8,7 @@ export default function Description() {
                     All About Me
                 </span>
                 <div className="md:w-1/2 w-full flex flex-col gap-6">
-                    <h3 className="font-medium font-grotesk 2xl:text-[3rem] md:text-[1.5rem] text-[32px]">With more than 6 years of experience creating digital products for brands.</h3>
+                    <h3 className="font-medium font-grotesk 2xl:text-[3rem] md:text-[1.5rem] text-[32px] leading-tight md:leading-normal">With more than 6 years of experience creating digital products for brands.</h3>
                     <div className="flex flex-col md:gap-8 gap-4 text-gray-4 font-inter md:text-lg text-sm">
                         <p>
                             I&apos;m a digital product designer with a background in graphic design, but my journey into design wasn&apos;t exactly traditional. I actually graduated from medical university, but somewhere along the way, I realized my passion lay elsewhere—creating, problem-solving, and making digital experiences better.

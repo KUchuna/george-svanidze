@@ -1,0 +1,14 @@
+import data from "@/public/lib/projectData"
+import "@/app/globals.css"
+
+export default function ProjectDescription({projectId}: {projectId: number}) {
+    const project = data.find(p => p.id === projectId);
+
+    return (
+        <div className="flex flex-col w-[60%]">
+            <h3 className="text-5xl font-medium mb-10">Project information</h3>
+            <div id="project-description" className={` dark:text-[#878392] text-black text-[12px] lg:text-2xl`} dangerouslySetInnerHTML={{__html: project?.description || ""}}>
+            </div>
+        </div>
+    )
+}
