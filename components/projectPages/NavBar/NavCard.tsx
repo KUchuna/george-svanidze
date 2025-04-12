@@ -55,9 +55,9 @@ export default function NavCard(props: NavCardProps) {
 
     return (
         <div
-            className={`p-3 flex flex-row justify-start items-center border-[1px] border-[white] dark:border-[#232323] bg-[#F4F4F4] dark:bg-[#232323] min-w-[350px] rounded-xl cursor-pointer ${
+            className={`md:p-3 p-1 flex flex-row justify-start items-center border-[1px] border-[white] dark:border-[#232323] bg-[#F4F4F4] dark:bg-[#232323] min-w-[330px] md:min-w-[350px] rounded-xl cursor-pointer h-fit ${
                 props.currentId === props.id ? "border-[1px]" : ""
-            }`}
+            } hover:bg-[#EBEBEB] dark:hover:bg-[#2D2D2D] transition-colors duration-300 `}
             style={{
                 borderColor: props.currentId === props.id ? getBorderColorById(props.id) : undefined,
             }}

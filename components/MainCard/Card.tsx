@@ -42,7 +42,7 @@ export default function Card(props: CardProps) {
 
     return (
         <div className={`flex flex-col justify-start items-start gap-1 break-inside-avoid cursor-pointer 
-            ${props.index != 0 && "lg:mt-6"} ${props.index == 3 ? "2xl:mb-[100rem] lg:mb-[50rem]" : ""}`} 
+            ${props.index != 0 && "lg:mt-6"} ${props.index == 3 ? "2xl:mb-[50rem] lg:mb-[50rem]" : ""}`} 
             onClick={() => handleClick()}>
             <Image src={image} alt="project" width={1000} height={1000} className={`mb-1 lg:min-w-full lg:min-h-full lg:h-full h-[376px] rounded-xl lg:rounded-none object-cover min-w-full transition-opacity opacity-0 duration-200 ${[1, 3, 6].includes(props.id) ? "object-top" : "object-center"} lg:object-center`} 
                 onLoad={(event) => event.currentTarget.classList.remove("opacity-0")} quality={100} priority loading="eager"  />

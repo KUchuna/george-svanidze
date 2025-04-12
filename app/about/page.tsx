@@ -9,7 +9,7 @@ export default function About() {
     return (
         <>
             <Header />
-            <main className="dark:bg-[#141414] bg-white">
+            <main className="dark:bg-[#141414] bg-white mt-[8rem]">
                 <div className="md:px-2 px-1">
                     <AboutHeader />
                     <Carousel />

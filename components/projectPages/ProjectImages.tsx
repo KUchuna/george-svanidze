@@ -34,7 +34,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
   return (
         <div className="flex flex-col md:gap-3 gap-1 h-full">
             {!allImagesLoaded && (
-                <div className="w-full h-full flex flex-col justify-end items-left gap-4">
+                <div className="w-full h-full flex flex-col justify-end items-left gap-4 mt-auto">
                     <Loader 
                       progress={progress}
                       id={projectId}
@@ -48,18 +48,18 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
                 allImagesLoaded ? "" : "hidden"}`}
             >
             {row.map((src, index) => (
-              <div className="w-full" key={index}>
-                  <Image
+              <div className={`w-full overflow-hidden ${row.length > 1 ? row.length < 3 ? "flex-1 basis-0 min-h-[190px]" : "w-full" : "w-full"} md:h-full`} key={index}>
+                <Image
                   src={src.replace('./public', '')}
                   alt=""
-                  width={2000}
-                  height={1000}
-                  className={`h-full ${row.length > 1 ? "flex-1 basis-0" : "w-full"}`}
+                  width={2100}
+                  height={1300}
+                  className={`h-full w-full object-cover rounded-sm`}
                   priority
                   quality={100}
                   onLoad={() => OnLoad()}
-                  />
-              </div>
+                />
+              </div>            
             ))}
             </div>
         ))}

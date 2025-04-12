@@ -9,7 +9,7 @@ export default function Home() {
       <Header 
         mainPage
       />
-      <main className="flex justify-center items-center 2xl:pt-20 pt-4 md:pt-8 text-center bg-white dark:bg-[#141414] rounded-b-2xl">
+      <main className="flex justify-center items-center 2xl:pt-10 pt-4 md:pt-8 text-center bg-white dark:bg-[#141414] rounded-b-2xl">
         <div className="lg:columns-4 lg:block flex flex-col lg:gap-3 gap-5 lg:px-[0.625rem] px-1 lg:pb-16 pb-8 w-full ">
           {data.map((card, index) => {
             return (

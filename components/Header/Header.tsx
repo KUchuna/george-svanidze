@@ -2,14 +2,15 @@ import ThemeChanger from "./ThemeChanger";
 import NavigationButtons from "./NavigationButtons";
 import Link from "next/link";
 
+
 interface HeaderProps {
     mainPage?: boolean
 }
 
 export default function Header({mainPage}: HeaderProps) {
-    
+
     return (
-        <header className={`flex flex-col ${mainPage ? "" : "sticky top-0 z-50 bg-white dark:bg-[#141414]"} sticky top-0 z-50 bg-white dark:bg-[#141414] lg:static`}>
+        <header className={`flex flex-col ${mainPage ? "" : "fixed top-0 left-0 right-0 w-full z-50 bg-white dark:bg-[#141414]"} bg-white dark:bg-[#141414]`}>
             {mainPage ? 
                 <h1 className="font-grotesk uppercase lg:text-[11.6vw] text-[11vw] lg:leading-none font-medium select-none text-center dark:bg-[#141414]">george svanidze</h1>
                 : 

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@plaiceholder/next": "^3.0.0",
+    "array-move": "^4.0.0",
     "embla-carousel-react": "^8.5.2",
     "motion": "^11.18.0",
     "next": "^15.2.4",
