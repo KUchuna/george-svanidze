@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Personal portfolio website of UI/UX Designer, Giorgi Svanidze",
   openGraph: {
     images: [{
-      url: "../public/opengraph.png",
+      url: "opengraph.png",
       width: 1200,
     }]
   },
