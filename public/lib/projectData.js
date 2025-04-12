@@ -19,7 +19,9 @@ const data = [
             ["/pictures/projects/tbc/21.png", "/pictures/projects/tbc/22.png"],
             ["/pictures/projects/tbc/23.png"]
         ],
-        description: ""
+        description: "<div>TBC UZ App</div><p> TBC UZ is the largest e-banking application in Uzbekistan, serving over 5 million active users every month. The app plays a key role in the country’s digital banking experience, but its outdated design and interaction patterns no longer met modern user expectations or market standards.</p><span>What We Did:</span><p>In collaboration with an incredible team of designers and a newly appointed Head of Design, we completely reimagined the TBC UZ app. From the design language to the tiniest interaction details, every decision was made to deliver a fresh, intuitive, and distinctly modern user experience.</p><span>Key Features:</span><ul><li>Complete UX/UI Overhaul: Redesigned the entire application from scratch, introducing a non-disciplinary, market-first design approach paired with smooth transitions and thoughtful micro interactions.</li><li>New Design Language: Established a bold, clean, and dynamic visual system that stands out in the region’s app market.</li><li>User-Centered Process: Backed every design decision with extensive user testing to ensure the new experience not only looked good but worked better for real users.</li><li>Market-Changing Vision: Set out to redefine what a mobile banking app could be in Uzbekistan — more than just functional, but enjoyable, clear, and seamless.</li></ul><span>Outcome:</span><p>The redesigned TBC UZ app didn’t just improve usability and aesthetics — it raised the bar for digital products in the region, offering a banking experience that felt modern, intuitive, and tailored to the everyday needs of its massive user base.</p>",
+        teamLead: "Mykhailo Karlov",
+        designers: ["George Svanidze", "Mikhailo Karlov", "Anastasya Novikova"]
     },
     {
         id: 2,

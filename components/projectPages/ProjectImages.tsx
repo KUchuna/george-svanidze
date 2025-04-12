@@ -76,7 +76,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
             </div>
         ))}
         </div>
-        <section className="font-grotesk flex gap-16">
+        <section className="font-grotesk flex lg:gap-16 gap-4 bg-[#F4F4F4] dark:bg-[#232323] p-3 rounded-xl">
           <ProjectDescription 
             projectId={projectId}
           />

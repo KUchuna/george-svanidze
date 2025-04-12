@@ -18,6 +18,9 @@ export default function NavCard(props: NavCardProps) {
     const router = useRouter()
 
     function handleClick() {
+        if(props.id == 2 || props.id == 3 || props.id == 6 || props.id == 13) {
+            return
+        }
         router.push(`/projects/${props.id}`)
     }
 
@@ -56,7 +59,7 @@ export default function NavCard(props: NavCardProps) {
 
     return (
         <motion.div
-            className={`md:p-3 p-1 flex flex-row justify-start items-center border-[1px] border-[white] dark:border-[#232323] bg-[#F4F4F4] dark:bg-[#232323] min-w-[330px] md:min-w-[350px] rounded-xl cursor-pointer h-fit ${
+            className={`md:p-3 p-1 flex flex-row justify-start items-center border-[1px] border-[white] dark:border-[#232323] bg-[#F4F4F4] dark:bg-[#232323] min-w-[330px] md:min-w-[350px] rounded-xl ${props.id == 2 || props.id == 3 || props.id == 6 || props.id == 13 ? "cursor-not-allowed" : "cursor-pointer"} h-fit ${
                 props.currentId === props.id ? "border-[1px]" : ""
             } hover:bg-[#EBEBEB] dark:hover:bg-[#2D2D2D] transition-colors duration-300 `}
             style={{
