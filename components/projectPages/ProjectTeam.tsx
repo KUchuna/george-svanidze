@@ -7,7 +7,7 @@ export default function ProjectTeam({projectId}: {projectId: number}) {
         <div className="max-w-[30%]">
             <h3 className="font-grotesk lg:text-5xl text-2xl font-medium mb-6 ">Team</h3>
             {project?.teamLead &&
-                <div className="mb-4 dark:text-[#878392] text-black text-[12px] lg:text-2xl"><strong>Team lead:</strong> {project?.teamLead}</div>
+                <div className="mb-4 dark:text-[#878392] text-[#3F3F3F] text-[12px] lg:text-2xl"><strong>Team lead:</strong> {project?.teamLead}</div>
 
             }
             {
