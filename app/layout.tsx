@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Personal portfolio website of UI/UX Designer, Giorgi Svanidze",
   openGraph: {
     images: [{
-      url: "https://ibb.co/0pGT1NYk",
+      url: "https://i.ibb.co/Ngy5fhWX/Open-Graph.png",
       width: 1200,
       height: 630,
       alt: "George Svanidze Portfolio",
