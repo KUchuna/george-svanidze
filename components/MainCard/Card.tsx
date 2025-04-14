@@ -40,8 +40,8 @@ export default function Card(props: CardProps) {
                     onLoad={(event) => event.currentTarget.classList.remove("opacity-0")} quality={100} priority loading="eager"  />
                 {(props.id == 2 || props.id == 3 || props.id == 6 || props.id == 13) &&
                     <div className="absolute top-0 left-0 w-full h-full text-white flex justify-center items-center flex-col">
-                        <span className="font-grotesk font-bold text-xl 2xl:text-3xl">Not ready yet</span>
-                        <p className="font-grotesk text-lg 2xl:text-xl">I’m doing my best to finalize this project</p>
+                        <span className="font-grotesk font-bold text-lg 2xl:text-3xl">Not ready yet</span>
+                        <p className="font-grotesk text-sm 2xl:text-xl">I’m doing my best to finalize this project</p>
                     </div>
                 }
             </div>
