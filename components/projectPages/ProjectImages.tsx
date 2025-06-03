@@ -18,7 +18,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
   const totalImages = project?.images?.flat().length || 0;
 
   useEffect(() => {
-    if (imagesLoaded === totalImages && totalImages > 0) {
+    if (imagesLoaded > totalImages/2 && totalImages > 0) {
       setAllImagesLoaded(true);
     }
   }, [imagesLoaded, totalImages]);
@@ -27,7 +27,7 @@ export default function ProjectImages({ projectId }: { projectId: number }) {
     return <NotFound innerpage />;
   }
 
-  const progress = totalImages > 0 ? Math.round((imagesLoaded / totalImages) * 100) : 0;
+  const progress = totalImages > 0 ? Math.round((imagesLoaded / totalImages*2) * 100) : 0;
 
 
   function OnLoad() {
